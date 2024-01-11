@@ -37,10 +37,10 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://docker.io/zhouwude/kube-apiserver:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-controller-manager:v1.28.2 docker://docker.io/zhouwude/kube-controller-manager:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-scheduler:v1.28.2 docker://docker.io/zhouwude/kube-scheduler:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-proxy:v1.28.2 docker://docker.io/zhouwude/kube-proxy:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/pause:3.9 docker://docker.io/zhouwude/pause:3.9
-        skopeo copy --all docker://registry.k8s.io/etcd:3.5.9-0 docker://docker.io/zhouwude/etcd:3.5.9-0
-        skopeo copy --all docker://registry.k8s.io/coredns/coredns:v1.10.1 docker://docker.io/zhouwude/coredns:v1.10.1
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.47.6 docker://zhouwude/tektoncd-pipeline-controller:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.47.6 docker://zhouwude/tektoncd-pipeline-resolvers:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.47.6 docker://zhouwude/tektoncd-pipeline-webhook:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.47.6 docker://zhouwude/tektoncd-pipeline-entrypoint:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.47.6 docker://zhouwude/tektoncd-pipeline-nop:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.47.6 docker://zhouwude/tektoncd-pipeline-sidecarlogresults:v0.47.6
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.47.6 docker://zhouwude/tektoncd-pipeline-workingdirinit:v0.47.6
