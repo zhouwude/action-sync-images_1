@@ -37,10 +37,10 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://docker.io/weiyigeek/kube-apiserver:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-controller-manager:v1.28.2 docker://docker.io/weiyigeek/kube-controller-manager:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-scheduler:v1.28.2 docker://docker.io/weiyigeek/kube-scheduler:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/kube-proxy:v1.28.2 docker://docker.io/weiyigeek/kube-proxy:v1.28.2
-        skopeo copy --all docker://registry.k8s.io/pause:3.9 docker://docker.io/weiyigeek/pause:3.9
-        skopeo copy --all docker://registry.k8s.io/etcd:3.5.9-0 docker://docker.io/weiyigeek/etcd:3.5.9-0
-        skopeo copy --all docker://registry.k8s.io/coredns/coredns:v1.10.1 docker://docker.io/weiyigeek/coredns:v1.10.1
+        skopeo copy --all docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://docker.io/zhouwude/kube-apiserver:v1.28.2
+        skopeo copy --all docker://registry.k8s.io/kube-controller-manager:v1.28.2 docker://docker.io/zhouwude/kube-controller-manager:v1.28.2
+        skopeo copy --all docker://registry.k8s.io/kube-scheduler:v1.28.2 docker://docker.io/zhouwude/kube-scheduler:v1.28.2
+        skopeo copy --all docker://registry.k8s.io/kube-proxy:v1.28.2 docker://docker.io/zhouwude/kube-proxy:v1.28.2
+        skopeo copy --all docker://registry.k8s.io/pause:3.9 docker://docker.io/zhouwude/pause:3.9
+        skopeo copy --all docker://registry.k8s.io/etcd:3.5.9-0 docker://docker.io/zhouwude/etcd:3.5.9-0
+        skopeo copy --all docker://registry.k8s.io/coredns/coredns:v1.10.1 docker://docker.io/zhouwude/coredns:v1.10.1
