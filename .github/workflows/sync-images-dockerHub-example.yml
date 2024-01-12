@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.42.0 docker://zhouwude/tektoncd-dashboard-dashboard:v0.42.0
+        skopeo copy --all docker://registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.8.0 docker://zhouwude/kube-state-metrics::v2.8.0
