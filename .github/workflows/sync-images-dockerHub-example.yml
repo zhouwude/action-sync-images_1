@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/kaniko-project/executor:latest docker://zhouwude/kaniko-executor:v1.0.0
+        skopeo copy --all docker://registry.k8s.io/hpa-example docker://zhouwude/hpa-example
