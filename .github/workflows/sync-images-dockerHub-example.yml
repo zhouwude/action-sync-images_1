@@ -37,4 +37,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://k8s.gcr.io/ubuntu-slim:0.1 docker://zhouwude/ubuntu-slim:0.1
+        skopeo copy --all docker://registry.k8s.io/autoscaling/vpa-admission-controller:1.0.0 docker://zhouwude/autoscaling-vpa-admission-controller:1.0.0
+        skopeo copy --all docker://registry.k8s.io/autoscaling/vpa-recommender:1.0.0 docker://zhouwude/autoscaling-vpa-recommender:1.0.0
+        skopeo copy --all docker://registry.k8s.io/autoscaling/vpa-updater:1.0.0 docker://zhouwude/autoscaling-vpa-updater:1.0.0
