@@ -37,4 +37,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/kubebuilder/kube-rbac-proxy:v0.15.0 docker://kubebuilder-kube-rbac-proxy:v0.15.0
+        skopeo copy --all docker://gcr.io/kubebuilder/kube-rbac-proxy:v0.15.0 docker://zhouwude/kubebuilder-kube-rbac-proxy:v0.15.0
